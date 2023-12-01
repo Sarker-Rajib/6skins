@@ -1,0 +1,227 @@
+/*=== abstracts css start === */
+@font-face {
+  font-family: "verdana";
+  src: url(../font/verdana.ttf);
+}
+@font-face {
+  font-family: "helvetica";
+  src: url(../font/Helvetica.ttf);
+}
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "verdana";
+}
+
+/*===// end of base css === */
+/*=== layouts css start === */
+.main-section {
+  height: 100vh;
+  position: relative;
+  padding-bottom: 100px;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+.main-section .top-section {
+  height: calc(100vh - 100px);
+}
+.main-section .top-section.banner-home {
+  background: url(../images/h-bg.png) no-repeat center center/cover;
+  position: relative;
+}
+.main-section .top-section.banner-home .text-6 {
+  position: absolute;
+  left: 90px;
+  top: 80px;
+}
+.main-section .top-section.categories .wrap-p {
+  height: 100%;
+}
+.main-section .top-section.categories .wrap-p .col-2 {
+  height: 50%;
+}
+.main-section .top-section.categories .wrap-p .col-2 .p-card {
+  height: 100%;
+}
+.main-section .top-section.categories .wrap-p .col-2 .p-card .image {
+  height: 70%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-section .top-section.categories .wrap-p .col-2 .p-card .image.odd {
+  background: #f8f8f8;
+}
+.main-section .top-section.categories .wrap-p .col-2 .p-card .text {
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 15px;
+}
+.main-section .top-section.categories .wrap-p .col-2 .p-card .text p {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "helvetica";
+  font-size: 18px;
+  color: #3d3d3d;
+}
+.main-section .top-section.categories .wrap-p .col-2 .p-card .text.odd {
+  background: #eaeaea;
+}
+.main-section .top-section.categories .wrap-p .col-2 .p-card .text.even {
+  background: #f8f8f8;
+}
+.main-section .top-section.collection .cc-wrap {
+  height: 100%;
+}
+.main-section .top-section.collection .cc-wrap .col-4 {
+  height: 100%;
+}
+.main-section .top-section.collection .cc-wrap .col-4 a {
+  display: block;
+  height: 100%;
+}
+.main-section .top-section.collection .cc-wrap .col-4 a .cc-card {
+  height: 100%;
+}
+.main-section .top-section.collection .cc-wrap .col-4 a .cc-card .li-img {
+  height: 100%;
+  width: 100%;
+}
+.main-section .top-section.brands .wrap-p {
+  height: 100%;
+}
+.main-section .top-section.brands .wrap-p .col-6 {
+  height: 50%;
+}
+.main-section .top-section.brands .wrap-p .col-6 .b-wrap {
+  height: 100%;
+  display: block;
+}
+.main-section .top-section.brands .wrap-p .col-6 .p-card {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-section .top-section.brands .wrap-p .col-6 .p-card .link-image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-section .top-section.product .swiper {
+  padding: 0 40px;
+  height: 100%;
+}
+.main-section .top-section.product .swiper .swiper-wrapper {
+  height: 100%;
+}
+.main-section .top-section.product .swiper .swiper-wrapper .swiper-slide {
+  height: 100%;
+}
+.main-section .top-section.product .swiper .swiper-wrapper .swiper-slide .text h2 {
+  font-family: "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  font-size: 29px;
+  color: #000000;
+}
+.main-section .top-section.product .swiper .swiper-wrapper .swiper-slide .text h3 {
+  font-size: 22px;
+  color: #918d8d;
+}
+.main-section .top-section.product .swiper .swiper-wrapper .swiper-slide .text p {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #929292;
+  padding: 30px 0 25px;
+}
+.main-section .top-section.product .swiper .swiper-wrapper .swiper-slide .text h4 {
+  font-family: "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  font-size: 29px;
+  color: #000000;
+}
+.main-section .top-section.product .swiper .swiper-wrapper .swiper-slide .text h5 {
+  font-size: 21px;
+  color: #918d8d;
+  text-transform: uppercase;
+}
+.main-section .top-section.product .swiper .swiper-button-prev {
+  height: 40px;
+  width: 40px;
+  background: #000;
+  border-radius: 50%;
+}
+.main-section .top-section.product .swiper .swiper-button-prev::after {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+.main-section .top-section.product .swiper .swiper-button-next {
+  height: 40px;
+  width: 40px;
+  background: #000;
+  border-radius: 50%;
+}
+.main-section .top-section.product .swiper .swiper-button-next::after {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+.main-section .navigation {
+  height: 100px;
+  background: #b5174a;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 125px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-section .navigation .nav-l {
+  display: block;
+  text-align: center;
+}
+.main-section .navigation .nav-l img {
+  max-width: 55px;
+}
+.main-section .navigation .nav-l p {
+  padding-top: 2px;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/*===// end of layouts css === */
+/*=== components css start === */
+/*===// end of components css === *//*# sourceMappingURL=style.css.map */

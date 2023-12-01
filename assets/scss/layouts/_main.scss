@@ -1,0 +1,232 @@
+.main-section {
+    height: 100vh;
+    position: relative;
+    padding-bottom: 100px;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+
+    .top-section {
+        height: calc(100vh - 100px);
+
+        &.banner-home {
+            background: url(../images/h-bg.png) no-repeat center center/cover;
+            position: relative;
+
+            .text-6 {
+                position: absolute;
+                left: 90px;
+                top: 80px;
+            }
+        }
+
+        &.categories {
+            .wrap-p {
+                height: 100%;
+
+                .col-2 {
+                    height: 50%;
+
+                    .p-card {
+                        height: 100%;
+
+                        .image {
+                            height: 70%;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &.odd {
+                                background: #f8f8f8;
+                            }
+                        }
+
+                        .text {
+                            height: 30%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 20px 15px;
+
+                            p {
+                                text-transform: uppercase;
+                                text-align: center;
+                                font-family: "helvetica";
+                                font-size: 18px;
+                                color: #3d3d3d;
+                            }
+
+                            &.odd {
+                                background: #eaeaea;
+                            }
+
+                            &.even {
+                                background: #f8f8f8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &.collection {
+            .cc-wrap {
+                height: 100%;
+
+                .col-4 {
+                    height: 100%;
+
+                    a {
+                        display: block;
+                        height: 100%;
+
+                        .cc-card {
+                            height: 100%;
+
+                            .li-img {
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        &.brands {
+            .wrap-p {
+                height: 100%;
+
+                .col-6 {
+                    height: 50%;
+
+                    .b-wrap {
+                        height: 100%;
+                        display: block;
+                    }
+
+                    .p-card {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .link-image {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.product {
+            .swiper {
+                padding: 0 40px;
+                height: 100%;
+
+                .swiper-wrapper {
+                    height: 100%;
+
+                    .swiper-slide {
+                        height: 100%;
+
+                        .text {
+                            h2 {
+                                font-family: 'Helvetica Neue', sans-serif;
+                                text-transform: uppercase;
+                                font-size: 29px;
+                                color: #000000;
+                            }
+
+                            h3 {
+                                font-size: 22px;
+                                color: #918d8d;
+                            }
+
+                            p {
+                                text-transform: uppercase;
+                                font-size: 15px;
+                                color: #929292;
+                                padding: 30px 0 25px;
+                            }
+
+
+                            h4 {
+                                font-family: 'Helvetica Neue', sans-serif;
+                                text-transform: uppercase;
+                                font-size: 29px;
+                                color: #000000;
+                            }
+
+                            h5 {
+                                font-size: 21px;
+                                color: #918d8d;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+
+                }
+
+                .swiper-button-prev {
+                    height: 40px;
+                    width: 40px;
+                    background: #000;
+                    border-radius: 50%;
+
+                    &::after {
+                        font-size: 25px;
+                        font-weight: bold;
+                        color: #fff;
+                    }
+                }
+
+                .swiper-button-next {
+                    height: 40px;
+                    width: 40px;
+                    background: #000;
+                    border-radius: 50%;
+
+                    &::after {
+                        font-size: 25px;
+                        font-weight: bold;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .navigation {
+        height: 100px;
+        background: #b5174a;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0 125px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav-l {
+            display: block;
+            text-align: center;
+
+            img {
+                max-width: 55px;
+            }
+
+            p {
+                padding-top: 2px;
+                font-size: 14px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
